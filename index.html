@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Moje CV</title>
-
     <link id="themeStyle" rel="stylesheet" href="red.css">
 </head>
 <body>
@@ -22,7 +21,7 @@
         </p>
     </div>
 
-    <img src="photo.jpg" alt="Zdjęcie" class="photo">
+    <img src="photo.jpg" class="photo">
 </header>
 
 <div class="buttons">
@@ -32,42 +31,40 @@
 
 <section>
     <h2>O mnie</h2>
-    <p>
-        Jestem początkującym programistą, który rozwija się w kierunku front-end.
-        Lubię tworzyć strony internetowe i uczyć się nowych technologii.
-    </p>
+    <p>Jestem początkującym frontend developerem.</p>
 </section>
 
 <section>
     <h2>Doświadczenie</h2>
-    <p>
-        Pracowałem jako sprzedawca. Nauczyłem się pracy z klientem,
-        komunikacji i odpowiedzialności.
-    </p>
+    <p>Pracowałem jako sprzedawca.</p>
 </section>
 
 <section id="projekty">
     <h2>Projekty</h2>
-    <ul>
-        <li>Strona CV</li>
-        <li>Kalkulator JavaScript</li>
-        <li>Strona sklepu</li>
-    </ul>
+    <ul id="projektyList"></ul>
 </section>
 
 <section>
     <h2>Umiejętności</h2>
-    <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>GitHub</li>
-    </ul>
+    <ul class="skills"></ul>
+</section>
+
+<section>
+    <h2>Kontakt</h2>
+
+    <form id="contactForm">
+        <input type="text" id="imie" placeholder="Imię"><br><br>
+        <input type="text" id="nazwisko" placeholder="Nazwisko"><br><br>
+        <input type="email" id="email" placeholder="E-mail"><br><br>
+        <textarea id="wiadomosc" placeholder="Wiadomość"></textarea><br><br>
+
+        <button type="submit">Wyślij</button>
+        <p id="errorMsg"></p>
+    </form>
 </section>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
